@@ -1,34 +1,213 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+Answer:
+In order to locate and rettieve  data it is required to have data in a structured form. Structured form of data makes
+retrieval and manipulation easy.
 
 What are the various operations that can be performed on different Data Structures?
+Answer:
+Following operations can be performed on different Data Structure:
+     1. Searching
+     2. Sorting
+     3. Insertion
+     4. Deletion
+     5. Merging
+     6. Traversing
+
 List out the areas in which data structures are applied extensively?
+Answer:
+     1. Compiler Design,
+     2. Operating System,
+     3. Database Management System,
+     4. Statistical analysis package,
+     5. Numerical Analysis,
+     6. Graphics,
+     7. Artificial Intelligence,
+     8. Simulation
+
+
 what is an Array?
+Answer:
+An array in programming is a collection of data/value which has index associated with it. An array shall contain
+similar types of data, an array can be sorted or un sorted.
+
+
 what is the difference between the Array and ArrayList?
+Answer:
+1. Array length if fixed but arraylist is dynamic.
+2. Array members are accessed using [], but ArrayList has a set of methods to access elements and modify them as
+because aerialist is collection of framework in java.
+3. Array can store primitive variables and objects but arraylist can store oly Objects.
+
+
 what is LinkedList?
+Answer:
+Answer: A linked list is linear data Structure where each element is a separate object which is called node. Each node
+has data and reference to the next node. Last node has reference to null.
+
+
 How is an Array different from Linked List?
+Answer:
+1. An array element is having index number, but a node is having reference to next node.
+2. In array each element is independent, does not have any connection to the other element on the other hand in
+linked list each node are connected by previous node.
+3. In Linked list, location or address of elements is stored in the link part of previous element/node. In array,
+no pointers are used like linked list so no need of extra space in memory for pointer.
+4. Linked list consumed extra memory as the link location need to be saved in in the linked part of the previous
+elements in case of array it is not required.
+
+
 what is queue?
+Answer:
+It is a linear data structure where elements can be accessed  ob the basis of FIFO.
+
+
 what is stack?
+Answer:
+Stack is linear data structure where elements can be accessed on the basis of LIFO.
+
+
 what is FIFO and LIFO?
+Answer:
+FIFO: First in first out. Example: In Queue data can be accessed by FIFO method.
+LIFO: Last in first out. Example: In Stack elements can be accessed on the basis of LIFO.
+
+
 what is the order of complexity?
+Answer:
+For input is of size N, we can say that the algorithm will finish at O(1), O(N), O(N^2), O(N^3), O(N*log(N)) etc.
+
+
 what is the best case to search an element from an array?
+Answer:
+Best case - you find it (assuming you only need to find one) on the first comparison.
+
+
 what is the worst case to search an element from an array?
+Answer:
+Assuming there are no duplicates for the expected value and it is the last one in the array - the nth comparison.
+
+
 what is tree in data structure?
+Answer:
+A tree is a widely used abstract data a type or data structure implementing abstract data type. It is a hierarchical
+tree structure, which has root value and subtrees pf children with parent node, represented as a set of linked notes.
+
+
 what is graph in data structure?
-what is the difference between the HashTable and HashMap?
+Answer:
+A graph is pictorial representation of a set of objects where some pairs of objects are connected by link.
+The interconnected objects are represented by points termed as vertices are called edges.
+
+
+What is the difference between the HashTable and HashMap?
+Answer:
+1. HashMap is non-synchronized. This means if it’s used in multi thread environment then more than one thread can
+access and process the HashMap simultaneously. Hashtable is synchronized. It ensures that no more than one thread can
+access the Hashtable at a given moment of time.
+2. HashMap allows one null key and any numbers of null values. HashTable doesn't allow null key and null values.
+3. HashMap implementation LinkedHashMap maintain the insertion order and tree map sorts the mapping based on the
+ascending order of keys.
+
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Answer:
+The major data structures used are as follows:
+1. RDBMS - Array
+2. Network data model - Graph
+3. Hierarchical data model - Trees
+
+
 How HashMap works in java?
+Answer:
+A HashMap element has key and value in Java, elements are stored against a key. Map Interface implemented on HashMap
+in Java Collection Framework. elements manipulation is easy on the basis of key of the value.
+
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+Answer:
+It is a class in Java API, which extends IndexOutOfBoundException. IndexOutOfBoundsException occur when an array has
+been accessed with an illegal index. Index either negative or greater than or equal to the size of the array.
+
+
 What are the different ways of copying an array into another array?
+Answer:
+There are mainly four different ways to copy all elements of one
+array into another array in Java.
+1. Manually, 2. Arrays.copyOf() 3. System.arraycopy() 4. Object.clone()
+
+Manually: Copy elements one by one.
+Arrays.copyOf(): We can directly copy one array to another by using Arrays.copyOf() method.
+System.arraycopy(): Using this method.
+Object.clone(): We can also use clone() method to make a copy of array.
+
+
 What is difference between an array and a linked list?
+Answer:
+1. An array element is having index number, but a node is having reference to next node.
+2. In array each element is independent, does not have any connection to the other element on the other hand in
+linked list each node are connected by previous node.
+3. In Linked list, location or address of elements is stored in the link part of previous element/node. In array,
+no pointers are used like linked list so no need of extra space in memory for pointer.
+4. Linked list consumed extra memory as the link location need to be saved in in the linked part of the previous
+elements in case of array it is not required.
+
+
 What is DFS and BFS?
+Answer:
+Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structure
+This one starts at the root and explores as far as possible along each branch before backtracking.
+Breath-first search (BFS) is an algorithm for traversing or searching tree or graph data structure.
+It starts at the tree roots and explores the neighbour nodes first before visiting to the next level of neighbours.
+
+
 What is Recursion?
+Answer:
+When a method calls himself inside the method is called recursion. The method which causes recursion is called
+recursive method.
+
+
 What are linear and non linear data Structures?
+Answer:
+Linear data structure: 1. Array, 2. Stack, 3. Queue, 4. LinkedList
+Non-Linear data structure: 1. Trees 2. Graphs
+
+
 What is Big-(O)-notation?
+Answer:
+Big O notations is describes the performance or complexity of an algorithm. BY seeing this it is possible to understand
+how first the algorithm is. Big od specifically describes the worst-case scenario, and can be used to describe
+the execution time required or the space used by an algorithm.
+
+
 Outlined different kind of sorting algorithm with time complexity?
+Answer:
+1. Bubble sort: It is a comparison algorithm. It works by repeatedly stepping through the list to be sorted, comparing
+each pair of adjacent items and swapping them if they are in the wrong order. The pass through the list is repeated
+until no swaps are needed, which indicates that the list is sorted. Worst case performance: O(n2) Best case performance:
+O(n) Average case performance: O(n2) Worst case space complexity: O(n) total, O(1) auxiliary Bubble sort is not a
+practical sorting algorithm when n is large.
+
+2.Selection sort: It is an in-place comparison sort.Selection sort is noted for its simplicity, and also has performance
+advantages over more complicated algorithms in certain situations. Worst case performance: O(n2) Best case performance:
+O(n2) Average case performance: O(n2) Worst case space complexity: O(n) total, O(1) auxiliary
+
+3.Insertion sort: It is a comparison sort in which the sorted array (or list) is built one entry at a time. It is much
+less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. Worst case
+performance: O(n2) Best case performance: O(n) Average case performance: O(n2) Worst case space complexity: O(n) total,
+O(1) auxiliary
+
+4. Merge sort: It is an O(n log n) comparison-based sorting algorithm. Worst case performance: O(n log n) Best case
+performance: O(n log n) typical Average case performance: O(n log n) Worst case space complexity: O(n) total, O(n)
+auxiliary
+
+5.Quick sort: It is similar to merge sort in many ways. It divides the elements to be sorted into two groups, sorts
+the two groups by recursive calls, and combines the two sorted groups into a single array of sorted values. The choice
+of a good pivot element is critical to the efficiency of the quicksort algorithm. If we can ensure that the pivot
+element is near the median of the array values, then quicksort is very efficient. on average, makes O(n log n)
+comparisons to sort n items, in the worst case, it makes O(n2) comparisons
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
