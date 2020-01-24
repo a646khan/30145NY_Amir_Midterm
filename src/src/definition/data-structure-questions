@@ -1,0 +1,161 @@
+Please answer the below Data Structure Questions:
+
+why do we need data structure?
+A.Use of appropriate data structure enables a computer system to perform its task more efficiently,
+by influencing the ability of computer to store and retrieve data from any location in its memory.
+Different kind of data structures are suited to different computer applications and tasks
+
+
+What are the various operations that can be performed on different Data Structures?
+list, graph, tree, record (also called a struct or tuple), map also called a dictionary, and many more.
+Sorting, to sort the items in a required order.
+The most common operations performed on them are:
+Data insertion.
+Data update.
+Data retrieve
+
+
+List out the areas in which data structures are applied extensively?
+Compiler Design,
+Operating System,
+Database Management System,
+Statistical analysis package,
+Numerical Analysis,
+Graphics,
+Artificial Intelligence,
+and Simulation.
+
+what is an Array?
+An array, in the context of Java, is a dynamically-created object that serves as a container to hold constant number of values of the same type. By declaring an array,
+memory space is allocated for values of a particular type.
+An array element that is also an array is known as a subarray
+
+what is the difference between the Array and ArrayList?
+ArrayList is part of collection framework in Java. Therefore array members are accessed using [], while ArrayList has a set of methods to access elements and modify them.
+Array is a fixed size data structure while ArrayList is not
+
+what is LinkedList?
+Linked List are linear data structures where the elements are not stored in contiguous locations and every element is a separate object with a data part and address part.
+The LinkedList class also consists of various constructors and methods like other java collections
+
+How is an Array different from Linked List?
+difference between Array and Linked list regards to their structure. Arrays are index based data structure where each element associated with an index.
+While a linked list is a data structure which contains a sequence of the elements where each element is linked to its next element.
+
+what is queue?
+interface, java.util.Queue represents a data structure designed to have elements inserted at the end of the queue, and elements removed from the beginning of the queue.
+This is similar to how a queue in a supermarket works.
+The Java Queue interface is a subtype of the Java Collection interface
+
+
+what is stack?
+Stack is a Last In First Out (LIFO) data structure. It supports two basic operations called push and pop.
+The push operation adds an element at the top of the stack, and the pop operation removes an element from the top of the stack.
+Java provides a Stack class which models the Stack data structure
+
+what is FIFO and LIFO?
+FIFO is an abbreviation for first in, first out. It is a method for handling data structures where the first element is processed first and the newest element is processed last.
+LIFO is an abbreviation for Last in, first out is same as fist in, last out (FILO)
+
+what is the order of complexity?
+Complexity measures the time taken for running an algorithm and it is commonly used to count the number of elementary operations performed by the algorithm to improve the performance.
+Lets starts with simple example to understand the meaning of Time Complexity in java
+
+what is the best case to search an element from an array?
+Best searching technique for searching any element in an array is Linear search for a unsorted array where no specific pattern is given.
+Linear Search with complexity O(n)
+Binary Search with complexity O(log n)
+Search using HASH value with complexity O(1)
+
+what is the worst case to search an element from an array?
+Binary Search does not work for "un-Sorted" lists. For these lists just do a straight search starting from the first element; this gives a complexity of O(n).
+If you were to sort the array with MergeSort or any other O(nlogn) algorithm then the complexity would be O(nlogn)
+Binary Search does not work for "un-Sorted" lists. For these lists just do a straight search starting from the first element;
+this gives a complexity of O(n).
+If you were to sort the array with MergeSort or any other O(nlogn) algorithm then the complexity would be O(nlogn)
+
+what is tree in data structure?
+Tree is a non-linear data structure which organizes data in hierarchical structure. Root. Edge
+Connecting link between any two nodes is called as EDGE.
+In a tree with 'N' number of nodes there will be a maximum of 'N-1' number of edges
+
+
+what is graph in data structure?
+graph is a pictorial representation of a set of objects where some pairs of objects are connected by links.
+The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
+
+what is the difference between the HashTable and HashMap?
+It is not-thread safe and can't be shared between many threads without proper synchronization code whereas Hashtable is synchronized.
+It is thread-safe and can be shared with many threads.
+HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value
+
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Hierarchical database model.
+Relational model.
+Network model.
+Object-oriented database model.
+Entity-relationship model.
+Document model.
+Entity-attribute-value model.
+Star schema.
+While the hierarchical database model structures data as a tree of records,
+with each record having one parent record and many children, the network model allows each record to have multiple parent and child records,
+forming a generalized graph structure
+
+How HashMap works in java?
+HashMap in Java works on hashing principle. It is a data structure which allows us to store object and retrieve it in constant time O(1) provided we know the key.
+HashMap internally stores mapping in the form of Map.Entry object which contains both key and value object
+
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+ava.lang.ArrayIndexOutOfBoundsException.
+ArrayIndexOutOfBoundsException is thrown to indicate that we are trying to access array element with an illegal index.
+This exception is thrown when the index is either negative or greater than or equal to the size of the array.
+
+What are the different ways of copying an array into another array?
+copy elements from one array in Java e.g. you can manually copy elements by using a loop,
+create a clone of the array,
+use Arrays.copyOf() method or System.arrayCopy() to start copying elements from one array to another in Java
+
+What is difference between an array and a linked list?
+difference between Array and Linked list regards to their structure.
+Arrays are index based data structure where each element associated with an index.
+What is DFS and BFS?
+BFS stands for Breadth First Search is a vertex based technique for finding a shortest path in graph.
+It uses a Queue data structure which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue.
+It is slower than DFS Depth first search
+
+What is Recursion?
+Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem.
+A method that uses this technique is recursive. Many programming problems can be solved only by recursion,
+and some problems that can be solved by other techniques are better solved by recursion.
+
+What are linear and non linear data Structures?
+linear data structures are Arrays, Stack, Queue and Linked List.
+An arrays is a collection of data items having the same data types.
+All the data elements in non linear data structure can not be traversed in single run.
+Examples of non linear data structures are Trees and Graphs
+
+What is Big-(O)-notation?
+A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n,
+which is usually the number of items.
+Informally, saying some equation f(n) = O(g(n)) means it is less than some constant multiple of g(n)
+
+Outlined different kind of sorting algorithm with time complexity?
+When the array is almost sorted, insertion sort can be preferred. When order of input is not known,
+merge sort is preferred as it has worst case time complexity of nlogn and it is stable as well.
+When the array is sorted, insertion and bubble sort gives complexity of n but quick sort gives complexity of n^2
+
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of Accessing element.
+  b)In terms of Inserting element.
+  c)In terms of Searching element.
+  d)In terms of Removing element.
+
+
+Insert       Delete    Search    Insert    Delete    Search
+Array/       stack  /queue O(1) O(1) O(n) O(1) O(1) O(n)
+Linked        list O(1) O(1) O(n) O(1) O(1) O(n)
+Doubly linked list O(1) O(1) O(n) O(1) O(1) O(n)
+Hash table     O(1) O(1) O(1) O(n) O(n) O(n)
+Binary search tree  O(log(n)) O(log(n)) O(log(n)) O(n) O(n) O(n)
+
