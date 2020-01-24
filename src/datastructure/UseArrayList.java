@@ -1,10 +1,7 @@
 package datastructure;
-import databases.ConnectToSqlDB;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
-import java.util.List;
 
 public class UseArrayList {
 
@@ -13,30 +10,38 @@ public class UseArrayList {
 		 * Demonstrate how to use ArrayList that includes add,peek,remove,retrieve elements.
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 * Store all the sorted data into one of the databases.
-		 * 
+		 *
 		 */
-		List<String> myArray = new ArrayList<String>();
-		myArray.add("Sleep");
-		myArray.add("Eat");
-		myArray.add("Play");
-		myArray.add("Class");
-		myArray.add("Work");
 
-		System.out.println("Elements of ArrayList:\n"+myArray);
-		System.out.println("Peek into first elements:\n" + myArray.get(0));
-		System.out.println("Remove first element:\n" + myArray.remove(0));
-		System.out.println("Retrieve Current Elements:\n"+myArray);
+		ArrayList<Integer> exampleArrayList = new ArrayList<>(2);
 
-		System.out.println("\nFor Each loop to Retrieve Data:\n");
-		for (String a : myArray)
-			System.out.println(a);
+		exampleArrayList.add(5);
+		exampleArrayList.add(10);
+		exampleArrayList.add(20);
+		exampleArrayList.add(40);
+		exampleArrayList.add(80);
 
-		System.out.println("\nWhile loop to Retrieve Data:\n");
-		Iterator b = myArray.iterator();
-		while (b.hasNext())
-			System.out.println(b.next());
+		// Retrieving data using For Each
 
+		System.out.println("The ArrayList items by using For Each:");
+		for(Integer item: exampleArrayList)
+			System.out.println(item);
 
+		// Retrieving data using iterator
+
+		System.out.println("The ArrayList items by using iterator interface:");
+
+		Iterator iterator = exampleArrayList.iterator();
+
+		while(iterator.hasNext())
+			System.out.println(iterator.next());
+
+		exampleArrayList.remove(Integer.valueOf(40));
+		System.out.println("Removed 40. Now the ArrayList content is:");
+		for(Integer item: exampleArrayList)
+			System.out.println(item);
+
+		System.out.println("Retrieving element at index 2: " + exampleArrayList.get(2));
 	}
 
 }
